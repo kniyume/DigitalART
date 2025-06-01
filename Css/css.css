@@ -1,0 +1,413 @@
+
+@font-face{
+	font-family: myFont;
+	src:url(/VioletSans-Regular.ttf);
+}
+
+
+*{
+	font-family:myFont;
+}
+
+body {
+	margin: 0;
+	background-color: #f4f4f4;
+	color: #111;
+}
+
+/*======Header=====*/
+header {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 70px;
+	position: relative;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	font-size: 2.1rem;
+	line-height: 1.1;
+	width: 100%;
+}
+
+/*Navigation bar*/ 
+#nav_1 ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 30px;
+  	background-color: #000000;
+	letter-spacing: 0.15em;
+	font-size: 2.1rem;
+	text-transform: uppercase;	
+	text-align: center;
+}
+
+#nav_1 li {
+    display: inline-block;
+	margin: 0 45px 0 45px;
+
+}
+
+#nav_1 li a {
+
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+}
+
+#nav_1 li a:link{
+	color:white;
+}
+
+#nav_1 li a:hover {
+  background-color:rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+}
+
+/*======Dropdown=====*/
+
+#nav_1 .dropbtn {
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 2.1rem;
+  line-height: 1.1;
+  background-color: #000000;  /* Set black as default */
+  color: white;
+}
+
+#nav_1 .dropdown {
+	color: #000;
+  position: relative;
+}
+
+#nav_1 .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  z-index: 999;
+}
+
+#nav_1 .dropdown-content .colour-correct {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#nav_1 .dropdown-content .colour-correct:hover {
+	background-color: #000000;
+	color: white;
+
+}
+	
+
+#nav_1 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#nav_1 .dropdown:hover .dropbtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/*Second Menu*/
+
+#nav_2 ul {
+     list-style-type: none;
+     margin: 0; 
+	 padding: 0;
+	 width: auto;
+}
+
+#nav_2 li{
+	margin: 0 15px;
+	padding: 8px 8px;
+	padding-top: 16px;
+}
+
+
+#nav_2 li a:link{
+	color:rgb(0, 0, 0);
+}
+
+#nav_2 li a:visited{
+  color:black;
+  text-decoration:none;
+}
+/*=====h1-h2=====*/
+
+header h1 {
+	width: 100%;
+	font-size: 4.5rem; 
+}
+h2 {
+	width: 100%;
+	font-weight: 800;
+	font-size: 2.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	margin-bottom: 16px;
+	border-bottom: 4px solid black;
+	padding-bottom: 8px;
+}
+
+.container{
+	gap: 20px;
+	display: flex;
+	margin: 40px 20px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding: 30px ;
+	max-width: 1200px;
+}
+
+.sidebar {
+	padding: 10px;
+	background-color: white;
+	border: 8px solid black;
+	margin-right: 20px;
+	font-weight: 700;
+	font-size: 1.4rem;
+	font-family:myFont;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	line-height: 1.3;
+	box-shadow: 6px 6px 0 black;
+	flex: 1 1 35%;
+	min-width: 280px;
+}
+
+
+.content {
+	padding: 10px;
+	background-color: white;
+	border: 8px solid black;
+	font-size: 1.6rem;
+	font-weight: 600;
+	font-family:myFont;
+	line-height: 1.4;
+	box-shadow: 6px 6px 0 black;
+	text-transform: none;
+}
+
+.slider {
+	width: 100%;
+	height: 250px;
+	background-color: #ddd;
+	margin-bottom: 20px;
+	position: relative;
+	border: 5px solid black; 
+	overflow: hidden;
+	box-shadow: 8px 8px 0 black;
+}
+
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.video {
+	margin: 40px;
+	font-weight: 700;
+	font-family:myFont;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+}
+
+.map {
+	width: auto;
+	height: 320px;
+	background-color: #ccc;
+	border: 5px solid black;
+	box-shadow: 8px 8px 0 black;
+	margin-top: 20px;
+	width: 100%;
+}
+
+/*Dropdown for digital arts*/
+
+.imageflex{
+  overflow: hidden;
+  font-family: myFont;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 20px;
+}
+
+.imageflex img {
+  max-width: 50%;  
+  height: auto; 
+  border: 5px solid black;
+  box-shadow: 6px 6px 0 black;
+  float: left;
+  display: block;  
+  margin: 0 8px auto; 
+}
+
+.imageflexcontent { 
+  flex: 1;
+  min-width: 280px;
+  max-width: 800px;
+  font-family: myFont;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 10px;
+}
+
+/*who css code*/
+#who .container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+}
+
+#who img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+#who .text {
+  font-size: 70px;
+}
+
+
+/*footer*/
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 18px 12px;
+  width: 100%;
+  font-size: 0.85rem; 
+  font-family: myFont, 'Georgia', serif;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  font-style: normal;
+  border-top: 3px solid white;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 10;
+  line-height: 1.4;
+  text-transform: none;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dashed #fff;
+  padding: 0 3px;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.footer a:hover {
+  color: #ffdd99;
+  border-bottom: 1px solid #ffdd99;
+}
+
+/*image gallery*/
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.photo360fullscreen {
+  position: relative;
+  width: 100vw;
+  height: 50vh; /* Full viewport height */
+  background-color: white;
+  border-top: 6px solid black;
+  font-family: myFont;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.photo360fullscreen h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 3px solid black;
+  padding-bottom: 6px;
+}
+
+.photo360fullscreen iframe {
+  flex-grow: 1;
+  width: 100%;
+  border: 5px solid black;
+  box-shadow: 6px 6px 0 black;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+.container {
+    flex-direction: column;
+  }
+
+.sidebar, .content {
+    margin: 10px 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ .photo iframe360 {
+    height: 240px;
+  }
+
+  .photo360 {
+    padding: 15px;
+  }
+
+  .photo360 h2 {
+    font-size: 1.4rem;
+  }
+}
